@@ -119,7 +119,7 @@ if nav == 'Movies Recommendation':
     "Please provide me movie name which you like",
     (movies['title'].values))
 
-    if st.button('Show Recommendation'):
+    if st.button('Suggest'):
         recommended_movie_names,recommended_movie_posters = recommend(selected_movies_name)
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
