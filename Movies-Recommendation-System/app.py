@@ -110,10 +110,10 @@ if nav == 'Movies Recommendation':
 
 
 
-    movies_dict = pickle.load(open('Movies-Recommendation-System/movies_dict.pkl','rb'))
+    movies_dict = pickle.load(open('movies_dict.pkl','rb'))
     movies = pd.DataFrame(movies_dict)
 
-    similarity = pickle.load(open('Movies-Recommendation-System/similarity.pkl','rb'))
+    similarity = pickle.load(open('similarity.pkl','rb'))
 
     selected_movies_name = st.selectbox(
     "Please provide me movie name which you like",
