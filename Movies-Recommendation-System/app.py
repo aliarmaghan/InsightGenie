@@ -32,7 +32,7 @@ def p_title(title):
 ########
 
 st.sidebar.header('InsightGenie, I want to :crystal_ball:')
-nav = st.sidebar.radio('',['Go to homepage', 'Movies Recommendation', 'Paraphrase text', 'Analyze text'])
+nav = st.sidebar.radio('',['Go to homepage', 'Movies Recommendation', 'Text Summerization', 'Whatsapp chat analysis'])
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
