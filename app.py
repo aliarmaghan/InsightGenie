@@ -32,7 +32,7 @@ def p_title(title):
 ########
 
 st.sidebar.header('InsightGenie, I want to :crystal_ball:')
-nav = st.sidebar.radio('',['Go to homepage', 'Movies Recommendation', 'Text Summerization', 'Whatsapp chat analysis'])
+nav = st.sidebar.radio('',['Go to homepage', 'Movies Recommendation', 'Email Spam Classifier', 'Whatsapp chat analysis'])
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
@@ -102,7 +102,6 @@ def recommend(movie_name):
     
 if nav == 'Movies Recommendation':    
     st.markdown("<h4 style='text-align: center; color:grey;'>Movies Recommendation with InsightGenie &#129302;</h4>", unsafe_allow_html=True)
-    st.text('')
     p_title('Movies Recommender')
     st.text('')
 
@@ -141,43 +140,14 @@ if nav == 'Movies Recommendation':
 
 #-----------------------------------------
 
-#PARAPHRASE
-###########
+#       Email Spam Classifier
 
-# if nav == 'Paraphrase text':
-#     st.markdown("<h4 style='text-align: center; color:grey;'>Accelerate knowledge with SYNTHIA &#129302;</h4>", unsafe_allow_html=True)
-#     st.text('')
-#     p_title('Paraphrase')
-#     st.text('')
+if nav == 'Email Spam Classifier':
+    st.markdown("<h4 style='text-align: center; color:grey;'>Email Classifier with InsightGenie &#129302;</h4>", unsafe_allow_html=True)
+    p_title('Spam Classifier')
+    st.text('')
     
-#     p_example = 'Health is the level of functional or metabolic efficiency of a living organism. In humans, it is the ability of individuals or communities to adapt and self-manage when facing physical, mental, or social challenges. The most widely accepted definition of good health is that of the World Health Organization Constitution.'
-   
-#     input_pa = st.text_area("Use the example below or input your own text in English (maximum 500 characters)", max_chars=500, value=p_example, height=160)
 
-#     if st.button('Paraphrase'):
-#         if input_pa =='':
-#             st.error('Please enter some text')
-#         else:
-#             with st.spinner('Wait for it...'):
-#                     time.sleep(2)
-#                     translator = Translator()
-#                     mid = translator.translate(input_pa, dest="fr").text
-#                     mid2 = translator.translate(mid, dest="de").text
-#                     back = translator.translate(mid2, dest="en").text
-#                     st.markdown('___')
-#                     st.write('Back Translation Model')
-#                     st.success(back)
-#                     # e_augmenter = EmbeddingAugmenter(transformations_per_example=1, pct_words_to_swap=0.3)
-#                     # e_a = e_augmenter.augment(input_pa)
-#                     # st.markdown('___')
-#                     # st.write('Embedding Augmenter Model')
-#                     # st.success(e_a)
-#                     # w_augmenter = WordNetAugmenter(transformations_per_example=1, pct_words_to_swap=0.3)
-#                     # w_a = w_augmenter.augment(input_pa)
-#                     # st.markdown('___')
-#                     # st.write('WordNet Augmenter Model')
-#                     # st.success(w_a)
-#                     st.balloons()
 
 #-----------------------------------------
    
