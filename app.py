@@ -59,14 +59,22 @@ expander.write("I'd love your feedback :smiley: Want to collaborate? Develop a p
 
 if nav == 'Go to homepage':
 
-    st.markdown("<h1 style='text-align: center; color: white; font-size:28px;'>Welcome to InsightGenie!</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: DarkSalmon; font-size:28px;'>Welcome to InsightGenie!</h1>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center; font-size:56px;'<p>&#129302;</p></h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center; color: grey; font-size:20px;'> Idea behind InsightGenie is that your app provides valuable insights and solutions, almost like a genie granting wishes with its predictive powers!</h3>", unsafe_allow_html=True)
-    """
-    [![Star](https://img.shields.io/github/stars/dlopezyse/Synthia.svg?logo=github&style=social)](https://github.com/aliarmaghan)
-    [![Follow](https://img.shields.io/twitter/follow/armaghan78?style=social)](https://x.com/armaghan78)
-    [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/lopezyse)
-    """
+    st.markdown("""
+    <div style="text-align: center;">
+        <a href="https://github.com/aliarmaghan">
+            <img src="https://img.shields.io/github/stars/dlopezyse/Synthia.svg?logo=github&style=social" alt="Star">
+        </a>
+        <a href="https://x.com/armaghan78">
+            <img src="https://img.shields.io/twitter/follow/armaghan78?style=social" alt="Follow">
+        </a>
+        <a href="https://www.buymeacoffee.com/lopezyse">
+            <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social" alt="Buy me a coffee">
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown('___')
     st.write(':point_left: Use the menu at left to select a task (click on > if closed).')
     st.markdown('___')
