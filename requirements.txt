@@ -42,3 +42,6 @@ urllib3==2.2.1
 watchdog==4.0.1
 scikit-learn
 nltk
+matplotlib
+seaborn
+xgboost
